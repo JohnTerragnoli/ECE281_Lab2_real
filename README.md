@@ -1,13 +1,15 @@
 ECE281_Lab2_real
 ================
 
-second try....let's go git!!!
-
 
 
 #**Full Adder Creation and Testing**
 
-A module was created for a full adder.  In order to do this, a truth table was made describing the desired output of the full adder.  This Truth Table can be seen below:  
+A module was created for a full adder with the desired interface, as seen below: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Interface.JPG "Full Adder Interface")
+
+
+In order to do this, a truth table was made describing the desired output of the full adder.  This Truth Table can be seen below:  
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Truth%20Table.PNG "Full Adder Truth Table")
 
 
