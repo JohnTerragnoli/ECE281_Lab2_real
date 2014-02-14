@@ -109,7 +109,7 @@ Checking for overflow was done for both addition and subraction.  This was done 
 
 
 #Overflow Boolean Logic
-The boolean equation for this truth was written below:
+The boolean equation for this truth was written here:
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Overflow%20Equation.PNG "Overflow Boolean Logic")
 
 #Overflow Schematic
