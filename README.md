@@ -56,4 +56,6 @@ Then, in order to output this data to the NEXYS2 board, a .ucf file needed to be
 https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf  
 
 
+#**Adding Subtracting Capabilities**
+After it was confirmed that the adder worked, the ability to subtract two four bit numbers was added.  Subraction of A-B can occur when the button H13 is pressed down on the NEXYS2 board, and only when the button is HELD down.  To do this, the four bit adder module was modified.  Pressing the button down was added as an input to the four bit adder module.  When the button is not pressed down, the module will add A and B together and display the result on the LEDs above the switches on the NEXYS2 board.  
 
