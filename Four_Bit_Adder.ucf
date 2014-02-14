@@ -1,0 +1,29 @@
+#YOU ONLY HAVE TO DO THIS FOR INPUTS AND OUPUTS!!!
+#CRUISING!!
+ 
+#these are the inputs for the 4 bit numbers.  
+
+#B inputs
+NET "B(3)" LOC = "R17";
+NET "B(2)" LOC = "N17";
+NET "B(1)" LOC = "L13";
+NET "B(0)" LOC = "L14";
+
+#A inputs
+NET "A(3)" LOC = "K17";
+NET "A(2)" LOC = "K18";
+NET "A(1)" LOC = "H18";
+NET "A(0)" LOC = "G18";
+
+#Input Button that makes the adder subtract
+NET "Cin0" LOC = "H13";
+
+#Output Button that shows if there is overflow
+NET "OVERFLOW" LOC = "R4";
+
+
+#These are the outputs for the 4 bit adder
+NET "S(3)" LOC = "K14";
+NET "S(2)" LOC = "K15";
+NET "S(1)" LOC = "J15"; 
+NET "S(0)" LOC = "J14"; 
