@@ -29,7 +29,7 @@ Note: The exact direction for how to perform these steps to arrive at a logic eq
 Based off of these equations, the final schematic of the Full adder was made, shown below.  
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Schematic.JPG "Full Adder Schematic")
 
-Based on this schematic, the code for the full adder was created.  The wires declared in the vhdl code are the same as shown on the schematic.  The code for the full adder can be seen here:  https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder.vhd 
+Based on this schematic, the code for the full adder was created.  The wires declared in the vhdl code are the same as shown on the schematic.  The code for the full adder can be seen here:  https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full_Adder_Testbench.vhd   
 
 
 #Full Adder Testbench
