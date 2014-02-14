@@ -22,4 +22,9 @@ After this 1 bit full adder was created, four of them were combined in order to 
 The Schematic of the four bit adder can be seen below: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Add Schematic")
 
+This four bit adder was 
+
+This schematic dictated the code made in the file that allowed the 4 bit adder to work.  This file can be seen here:https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd 
+
+
 
