@@ -48,5 +48,9 @@ To test this vhdl module for the 4 bit adder, a testbench was created that would
 https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Testbench.vhd
 Notice, this is the testbench for all possible adding and subracting inputs used to test the adder and subracter later in this lab.  However, the first assert statement is the code that tests addition.  If only addition needs to be tested, the second assert statement can just be removed.  
 
+The reults from this adder simulation can be seen below, even though this screen shot includes both the tests for the adder and subtractor.  
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Four Bit Adder Simulation Results")
+
+
 
 
