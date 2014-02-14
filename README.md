@@ -17,12 +17,11 @@ A snapshot of the simulation results can be seen below.
 
 
 #**Designing the Four Bit Adder**
-After this 1 bit full adder was created, four of them were combined in order to create a four bit adder.  
+After this 1 bit full adder was created, four of them were combined in order to create a four bit adder.  The carry out of the full adder before was inputed into the carry in of the full add following it.  At this point, A and B were input into the full adders without any changes.  This restricts the design to just adding.  
 
 The Schematic of the four bit adder can be seen below: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Add Schematic")
 
-This four bit adder was 
 
 This schematic dictated the code made in the file that allowed the 4 bit adder to work.  This file can be seen here:https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd 
 
