@@ -15,7 +15,7 @@ In order to do this, a truth table was made describing the desired output of the
 
 
 #Full Adder Boolean Equations 
-From this truth table, the output for the carry and the sum were calculated.  These calculations and resulting equations can be seen below: 
+From this truth table, the output for the carry  and the sum (Cout and S, respectively)were calculated.  These calculations and resulting equations can be seen below: 
 
 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Cout%20logic.PNG "Carry Out Logic Calculations")
