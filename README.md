@@ -48,14 +48,20 @@ The outputs from this testbench happily match the truth table, therefore, the fu
 #**Designing the Four Bit Adder**
 After this 1 bit full adder was created, four full adders were combined in series in order to create a four bit adder.  The carry out of the full adder before was inputed into the carry in of the full add following it.  At this point, A and B were input into the full adders without any changes.  This restricts the design to just adding, and allowed the Cin in the least significant bit to be 0.  The carry from the last full adder was ignored and dumped.  
 
-The Schematic of the four bit adder can be seen below: 
-![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Add Schematic")
 
-In order to replicate this schematic in a vhdl module, the full adder created earlier was used as a component four separate times, so that the code used in the full adder did not have to be written out four times.  
+#Four Bit Adder Block Diagram
+The Schematic of the four bit adder can be seen below: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Adder Block Diagram")
+
+In order to replicate this schematic in a vhdl module, the full adder created earlier was used as a component four separate times, so that the code used in the full adder did not have to be written out four times. The Carry out of the full adders were made to be the carry in signals for the full adder one more significant bit above them (to the left on the picture).  That handles the carrys that happen in addition.  Then the specific bits of the inputs were sent to their respective full adders, as shown in the diagram. The output from the four full adders is the answer.  
 
 
 This schematic dictated the code made in the file that allowed the 4 bit adder to work.  This file can be seen here:https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd 
 
+It should be noted that this module is a later version and also contains the code for subtraction and overflow.  
+
+
+#Four Bit Adder Testbench and Simulation
 To test this vhdl module for the 4 bit adder, a testbench was created that would test every possible input to the four bit adder.  Since there are so many possible inputs, it was made using a for loop.  Also, "assert" statements were made, so that errors in the code could be pointed out exactly where they occur.  This was very helpful when trouble shooting and finding errors.  The code for this testbench can be seen here: 
 
 https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Testbench.vhd 
