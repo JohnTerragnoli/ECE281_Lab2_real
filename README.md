@@ -104,9 +104,13 @@ After these simulations were run without any errors, the .ucf file was updated t
 
 Once the code was uploaded, many test cases were run by hand.  All of the outputs were correct for their respective inputs.  
 
-#**Checking for Overflow*
+#**Checking for Overflow**
 Checking for overflow was done for both addition and subraction.  This was done so that the user would know if overflow occured in the arithmitic, so the user would know that the result is inaccurate.  This was done by having an LED on the NEXYS2 board light up whenever overflow occured.  In order to check for overflow, two cases needed to raise a red flag.  If either of these following cases occur, then overflow has occured.  If two positive numbers are added together and negative answer results, or if two negative inputs are added together and the result is a positive output.  In 2's compliment, the most significant bit represents the sign of the binary number. A 1 in the most significant bit represents a negative number and a 0 a positive number.  Therefore, if the most significant bits in A and Bin (Bin refers to either B or B's compliment, depending on if adding or subracting is occuring, respectively) are both 0, and the carry into the last full adder is a 1, then overflow has occured.  If the most significant bits of A and Bin are both 1, and the carry into the last full adder is a 0, then overflow has occured.  If overflow has occured, then its value is 1.  If its value is 1, then the LED at R4 is going to light up to notify the user.  
 
+
+#Overflow Boolean Logic
+The boolean equation for this truth was written below:
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Adder and Subractor Simulation Results")
 
 
  
