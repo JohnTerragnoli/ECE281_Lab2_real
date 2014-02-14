@@ -71,6 +71,8 @@ The original testbench for the four bit adder was modified with a second asser s
 The simulation that resulted from this testbench is the same one show previously for just the adder.  It is reproduced below: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Adder and Subractor Simulation Results")
 
+After these simulations were run without any errors, the .ucf file was updated to include the input button for subtraction.  This updated .ucf file is reproduced here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf
+
 
 
 
