@@ -74,5 +74,6 @@ The simulation that resulted from this testbench is the same one show previously
 After these simulations were run without any errors, the .ucf file was updated to include the input button for subtraction.  This updated .ucf file is reproduced here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf
 
 
-
+#**Documentation**
+Captain Silva helped me understand how to use when/else statements to create a multiplexer in my main four bit adder module.  I used this to help the design perform subraction and addition when instructed to do so.  
 
