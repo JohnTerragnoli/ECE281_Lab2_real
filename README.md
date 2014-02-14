@@ -46,7 +46,7 @@ The outputs from this testbench happily match the truth table, therefore, the fu
 
 
 #**Designing the Four Bit Adder**
-After this 1 bit full adder was created, four of full adders were combined in series in order to create a four bit adder.  The carry out of the full adder before was inputed into the carry in of the full add following it.  At this point, A and B were input into the full adders without any changes.  This restricts the design to just adding, and allowed the Cin in the least significant bit to be 0.  The carry from the last full adder was ignored and dumped.  
+After this 1 bit full adder was created, four full adders were combined in series in order to create a four bit adder.  The carry out of the full adder before was inputed into the carry in of the full add following it.  At this point, A and B were input into the full adders without any changes.  This restricts the design to just adding, and allowed the Cin in the least significant bit to be 0.  The carry from the last full adder was ignored and dumped.  
 
 The Schematic of the four bit adder can be seen below: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Add Schematic")
