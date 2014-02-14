@@ -32,7 +32,7 @@ Based off of these equations, the final schematic of the Full adder was made, sh
 Based on this schematic, the code for the full adder was created.  The wires declared in the vhdl code are the same as shown on the schematic.  The code for the full adder can be seen here:  https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder.vhd 
 
 
-#Full Adder Testsbench
+#Full Adder Testbench
 In order to test that this full adder was correct, then, a test bench was created.  This testbench tested every possible input for A, B and the Carry in.  The output data was then compared with the truth table to ensure that the full adder code was correct.  The Textbench code is here: https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder_Testbench.vhd  
 
 
@@ -67,33 +67,49 @@ To test this vhdl module for the 4 bit adder, a testbench was created that would
 https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Testbench.vhd 
 Notice, this is the testbench for all possible adding and subracting inputs used to test the adder and subracter later in this lab.  However, the first assert statement is the code that tests addition.  If only addition needs to be tested, the second assert statement can just be removed.  
 
-The reults from this adder simulation can be seen below, even though this screen shot includes both the tests for the adder and subtractor.  
+The results from this adder simulation can be seen below, even though this screen shot includes both the tests for the adder and subtractor.  
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Four Bit Adder Simulation Results")
 
 
+
+#Outputing Adder Code to NEXYS2
 Then, in order to output this data to the NEXYS2 board, a .ucf file needed to be created to assign the location of the outputs and inputs.  This .ucf file can be seen here: 
 https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf  
 
+Once this was done, the behavior of the hardware was tested.  It worked perfectly.  
+
 
 #**Adding Subtracting Capabilities**
-After it was confirmed that the adder worked, the ability to subtract two four bit numbers was added.  Subraction of A-B can occur when the button H13 is pressed down on the NEXYS2 board, and only when the button is HELD down.  To do this, the four bit adder module was modified.  Pressing the button down was added as an input to the four bit adder module.  When the button is not pressed down, the module will add A and B together and display the result on the LEDs above the switches on the NEXYS2 board.  If the button is held down, then the 2's compliment of the B inputed from the switches is added to A instead.  Taking the 2's compliment of a binary number is the same as putting a negative sign in front of it.  So adding A and B's 2's compliment is the same as A-B.  
+After it was confirmed that the adder worked, the ability to subtract two four bit numbers was added.  Subraction of A-B can occur when the button H13 is pressed down on the NEXYS2 board, and only when the button is HELD down.  To do this, the four bit adder module was modified.  Pressing the button down was added as an input to the four bit adder module.  When the button is not pressed down, the module will add A and B together and display the result on the LEDs above the switches on the NEXYS2 board.  If the button is held down, then the 2's compliment of the B inputed from the switches is added to A instead.  Taking the 2's compliment of a binary number is the same as putting a negative sign in front of it.  So adding A and B's 2's compliment is the same as A minus B.  
 
-The schematic describing this logic can be seen below.
+The block Diagram describing this logic can be seen below.
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Subtractor%20Schematic.JPG "Integrating Subtraction Schematic")
 
 
-Modifications were made to the four bit module to include the logic in this schematic.  This module can been seen below.  https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd  
-Again, this file include modifications that were made farther in the lab.  
+Modifications were made to the four bit module to include the logic in the above block diagram.  This module can been seen below.  https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd  
+Again, this file include modifications that were made farther in the lab, to include overflow notification.  
 
+
+#Adder and Subtraction Testbench and Simulation
 The original testbench for the four bit adder was modified with a second asser statement to test for subtraction.  These statements also returned errors if the subraction was not calculated properly by the code.   This testbench can be seen again here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Testbench.vhd
 
 The simulation that resulted from this testbench is the same one show previously for just the adder.  It is reproduced below: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Adder and Subractor Simulation Results")
 
+After analyzing these results, it was determined that there were no errors with the adder/subractor code.  
+
+
+#Outputing Adder and Subtractor Code to NEXYS2
 After these simulations were run without any errors, the .ucf file was updated to include the input button for subtraction.  This updated .ucf file is reproduced here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf
 
+Once the code was uploaded, many test cases were run by hand.  All of the outputs were correct for their respective inputs.  
+
 #**Checking for Overflow*
-Checking for overflow was done for both addition and subraction.  This was done so that the user would know if overflow occured in the arithmitic, so the user would know that the result is inaccurate.  This was done by having an LED on the NEXYS2 board light up whenever overflow occured.  
+Checking for overflow was done for both addition and subraction.  This was done so that the user would know if overflow occured in the arithmitic, so the user would know that the result is inaccurate.  This was done by having an LED on the NEXYS2 board light up whenever overflow occured.  In order to check for overflow, two cases needed to raise a red flag.  If either of these following cases occur, then overflow has occured.  If two positive numbers are added together and negative answer results, or if two negative inputs are added together and the result is a positive output.  In 2's compliment, the most significant bit represents the sign of the binary number. A 1 in the most significant bit represents a negative number and a 0 a positive number.  Therefore, if the most significant bits in A and Bin (Bin refers to either B or B's compliment, depending on if adding or subracting is occuring, respectively) are both 0, and the carry into the last full adder is a 1, then overflow has occured.  If the most significant bits of A and Bin are both 1, and the carry into the last full adder is a 0, then overflow has occured.  If overflow has occured, then its value is 1.  If its value is 1, then the LED at R4 is going to light up to notify the user.  
+
+
+
+ 
 
 
 #**Documentation**
