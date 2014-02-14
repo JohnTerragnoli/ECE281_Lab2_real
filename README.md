@@ -20,4 +20,6 @@ A snapshot of the simulation results can be seen below.
 After this 1 bit full adder was created, four of them were combined in order to create a four bit adder.  
 
 The Schematic of the four bit adder can be seen below: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/4%20Bit%20Adder%20Schematic.JPG "$ Bit Add Schematic")
+
 
