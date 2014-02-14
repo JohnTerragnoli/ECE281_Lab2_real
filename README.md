@@ -52,5 +52,8 @@ The reults from this adder simulation can be seen below, even though this screen
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Four Bit Adder Simulation Results")
 
 
+Then, in order to output this data to the NEXYS2 board, a .ucf file needed to be created to assign the location of the outputs and inputs.  This .ucf file can be seen here: 
+https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf  
+
 
 
