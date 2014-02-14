@@ -33,7 +33,7 @@ Based on this schematic, the code for the full adder was created.  The wires dec
 
 
 #Full Adder Testbench
-In order to test that this full adder was correct, then, a test bench was created.  This testbench tested every possible input for A, B and the Carry in.  The output data was then compared with the truth table to ensure that the full adder code was correct.  The Textbench code is here: https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder_Testbench.vhd  
+In order to test that this full adder was correct, then, a test bench was created.  This testbench tested every possible input for A, B and the Carry in.  The output data was then compared with the truth table to ensure that the full adder code was correct.  The Textbench code is here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full_Adder_Testbench.vhd 
 
 
 #Full Adder Simulation
