@@ -9,9 +9,12 @@ A module was created for a full adder with the desired interface, as seen below:
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Interface.JPG "Full Adder Interface")
 
 
+#Full Adder Truth Table
 In order to do this, a truth table was made describing the desired output of the full adder.  This Truth Table can be seen below:  
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Truth%20Table.PNG "Full Adder Truth Table")
 
+
+#Full Adder Boolean Equations 
 From this truth table, the output for the carry and the sum were calculated.  These calculations and resulting equations can be seen below: 
 
 
@@ -21,13 +24,19 @@ From this truth table, the output for the carry and the sum were calculated.  Th
 
 Note: The exact direction for how to perform these steps to arrive at a logic equation from a truth table can be seen in lab1.  The link to such general directions is here: https://raw.github.com/JohnTerragnoli/ECE281_Lab1/master/README.md under the K Map and Boolean Simplification Sections
 
+
+#Full Adder Schematic and Code
 Based off of these equations, the final schematic of the Full adder was made, shown below.  
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full%20Adder%20Schematic.JPG "Full Adder Schematic")
 
 Based on this schematic, the code for the full adder was created.  The wires declared in the vhdl code are the same as shown on the schematic.  The code for the full adder can be seen here:  https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder.vhd 
 
+
+#Full Adder Testsbench
 In order to test that this full adder was correct, then, a test bench was created.  This testbench tested every possible input for A, B and the Carry in.  The output data was then compared with the truth table to ensure that the full adder code was correct.  The Textbench code is here: https://github.com/JohnTerragnoli/ECE281_Lab2_real/blob/master/Full_Adder_Testbench.vhd  
 
+
+#Full Adder Simulation
 A snapshot of the simulation results can be seen below. 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Full_Adder_Testbench_Simulation.PNG "Full Adder Simulation Results")
 
