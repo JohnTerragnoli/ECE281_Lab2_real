@@ -66,3 +66,11 @@ The schematic describing this logic can be seen below.
 Modifications were made to the four bit module to include the logic in this schematic.  This module can been seen below.  https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Structural.vhd  
 Again, this file include modifications that were made farther in the lab.  
 
+The original testbench for the four bit adder was modified with a second asser statement to test for subtraction.  These statements also returned errors if the subraction was not calculated properly by the code.   This testbench can be seen again here: https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder_Testbench.vhd
+
+The simulation that resulted from this testbench is the same one show previously for just the adder.  It is reproduced below: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Adder and Subractor Simulation Results")
+
+
+
+
