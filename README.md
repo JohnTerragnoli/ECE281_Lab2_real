@@ -128,6 +128,7 @@ https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four_Bit_Adder.ucf
 
 
 #**Trouble Shooting**
+Something that took me a little too long to figure out was that there is a time limit on the simulations run through testbenches, or as least there is a way to set this limit.  When I first started to run my cases, and there was a 50ns delay in between each case, I could only get through about 8-9 cases.  I kept thinking there was something wrong with the logic in my testbench.  Then, I simply decreases the delay time in between each case and was able to view all beautiful 512 cases in the testbench.  
 
 
 
