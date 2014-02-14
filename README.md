@@ -118,8 +118,7 @@ The boolean equation above was then developed into a schematic, see below:
 
 
 #Adding Overflow Code
-
-
+The above schematic was the created in the main module using behavioral design.  This design is reproduced below:
  
 
 
