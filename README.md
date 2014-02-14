@@ -110,7 +110,14 @@ Checking for overflow was done for both addition and subraction.  This was done 
 
 #Overflow Boolean Logic
 The boolean equation for this truth was written below:
-![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Four%20Bit%20Adder%20Simulation%20Results.PNG "Adder and Subractor Simulation Results")
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Overflow%20Equation.PNG "Overflow Boolean Logic")
+
+#Overflow Schematic
+The boolean equation above was then developed into a schematic, see below:
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_Lab2_real/master/Overflow%20Schematic.JPG "Overflow Schematic")
+
+
+#Adding Overflow Code
 
 
  
